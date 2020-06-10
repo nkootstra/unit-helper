@@ -1,13 +1,10 @@
 <?php
 
-namespace Nkootstra\UnitConversion2;
+namespace Nkootstra\UnitConversion;
 
 use Illuminate\Support\Facades\Facade;
 
-/**
- * @see \Nkootstra\UnitConversion2\Skeleton\SkeletonClass
- */
-class UnitConversion2Facade extends Facade
+class UnitGuessFacade extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -16,6 +13,6 @@ class UnitConversion2Facade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'unit-conversion2';
+        return 'unit-guess';
     }
 }

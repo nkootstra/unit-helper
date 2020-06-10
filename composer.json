@@ -16,7 +16,8 @@
         }
     ],
     "require": {
-        "php": "^7.1",
+        "php": "^7.4",
+        "chriskonnertz/string-calc": "^1.0",
         "illuminate/support": "^6.0"
     },
     "require-dev": {
@@ -25,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Nkootstra\\UnitConversion2\\": "src"
+            "Nkootstra\\UnitConversion\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Nkootstra\\UnitConversion2\\Tests\\": "tests"
+            "Nkootstra\\UnitConversion\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +45,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Nkootstra\\UnitConversion2\\UnitConversion2ServiceProvider"
+                "UnitConversionServiceProvider"
             ],
             "aliases": {
-                "UnitConversion2": "Nkootstra\\UnitConversion2\\UnitConversion2Facade"
+                "UnitConversion2": "UnitConversionFacade"
             }
         }
     }
