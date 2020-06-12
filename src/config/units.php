@@ -1,10 +1,8 @@
 <?php
 
-/*
- * You can place your custom package configuration in here.
- */
+use Nkootstra\UnitConversion\Units\Volume\{Liter,MilliLiter,CentiLiter};
+use Nkootstra\UnitConversion\Units\Mass\{Gram,KiloGram,MetricTon,MilliGram};
 
-use Nkootstra\UnitConversion\Units\Volume\{Liter, MilliLiter};
 
 return [
     // volume

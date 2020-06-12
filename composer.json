@@ -3,7 +3,9 @@
     "description": "",
     "keywords": [
         "nkootstra",
-        "unit-conversion2"
+        "unit helper",
+        "unit guesser",
+        "unit conversion"
     ],
     "homepage": "https://github.com/nkootstra/unit-conversion2",
     "license": "MIT",
@@ -17,8 +19,7 @@
     ],
     "require": {
         "php": "^7.4",
-        "chriskonnertz/string-calc": "^1.0",
-        "illuminate/support": "^6.0"
+        "chriskonnertz/string-calc": "^1.0"
     },
     "require-dev": {
         "orchestra/testbench": "^4.0",
@@ -43,13 +44,5 @@
         "sort-packages": true
     },
     "extra": {
-        "laravel": {
-            "providers": [
-                "UnitConversionServiceProvider"
-            ],
-            "aliases": {
-                "UnitConversion2": "UnitConversionFacade"
-            }
-        }
     }
 }

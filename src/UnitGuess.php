@@ -37,16 +37,18 @@ class UnitGuess
     private function getQuantityString()
     {
         // remove unit
-        $quantity = preg_filter('/[^\d\s+x*.,]+/','',$this->input);
+        //$quantity = preg_filter('/[^\d\s+x*.,]+/','',$this->input);
+        preg_match_all('/(?:[0-9]+[.,]?|[x+*])/',$this->input,$matches);
+        $quantity = implode('',$matches[0]);
 
-        if(empty($quantity)) return 1;
+        if(empty(trim($quantity))) return 1;
 
         return $quantity;
     }
 
     private function getUnitByAbbreviation($quantity, $default) : IUnit
     {
-        $units = config('unit-conversion');
+        $units = include(__DIR__.'/config/units.php');
 
         $unit = trim(str_replace($quantity,'',$this->input));
 
@@ -55,6 +57,8 @@ class UnitGuess
         $quantity = str_replace(',','.', $quantity);
         $calculatedQuantity = (new StringCalc)->calculate($quantity);
 
+        $array = explode(' ', $unit); // only use the last word or letter
+        $unit = array_pop($array);
         foreach($units as $key => $u)
         {
             if(in_array($unit, $u))

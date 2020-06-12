@@ -7,6 +7,7 @@ use BaseUnitConversionTest;
 use Nkootstra\UnitConversion\Tests\BaseTestCase;
 use Nkootstra\UnitConversion\UnitGuess;
 use Nkootstra\UnitConversion\Units\Base\Piece;
+use Nkootstra\UnitConversion\Units\Mass\Gram;
 use Nkootstra\UnitConversion\Units\Volume\Liter;
 
 class UnitGuessTest extends BaseTestCase
@@ -52,5 +53,16 @@ class UnitGuessTest extends BaseTestCase
         $this->assertInstanceOf(Liter::class, $unit);
         $this->assertEquals(4, $unit->getQuantity());
         $this->assertEquals("Liter", $unit->getName());
+    }
+
+    public function test_ca_100_gram()
+    {
+        $guess = new UnitGuess("ca. 110 g");
+
+        $unit = $guess->guess(Piece::class);
+
+        $this->assertInstanceOf(Gram::class, $unit);
+        $this->assertEquals(110, $unit->getQuantity());
+        $this->assertEquals("Gram", $unit->getName());
     }
 }
