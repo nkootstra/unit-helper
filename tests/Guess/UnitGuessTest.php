@@ -65,4 +65,17 @@ class UnitGuessTest extends BaseTestCase
         $this->assertEquals(110, $unit->getQuantity());
         $this->assertEquals("Gram", $unit->getName());
     }
+
+    public function test_0_dot_33_liter()
+    {
+        $guess = new UnitGuess("0,33 l");
+
+        $unit = $guess->guess(Piece::class);
+
+        $this->assertInstanceOf(Liter::class, $unit);
+        $this->assertEquals(0.33, $unit->getQuantity());
+        $this->assertEquals("Liter", $unit->getName());
+
+    }
+
 }
