@@ -64,7 +64,6 @@ class UnitGuess
                 return new $key($calculatedQuantity);
             }
         }
-
         return new $default($calculatedQuantity);
     }
 }
