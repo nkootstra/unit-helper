@@ -10,7 +10,7 @@ use Nkootstra\UnitConversion\Units\BaseUnit;
 
 class UnitGuess
 {
-    private string $input;
+    private $input;
 
     public function __construct(string $input)
     {
