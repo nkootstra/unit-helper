@@ -8,7 +8,7 @@ interface IUnit
 {
     public function __construct($quantity=1);
 
-    public function getQuantity() : float;
+    public function getQuantity();
 
-    public function getName() : string;
+    public function getName();
 }

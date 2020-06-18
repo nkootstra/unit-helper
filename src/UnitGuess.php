@@ -22,7 +22,7 @@ class UnitGuess
      * @param string $default
      * @return IUnit
      */
-    public function guess($default = Piece::class) : IUnit
+    public function guess($default = Piece::class)
     {
         if(!new $default instanceof BaseUnit)
         {
@@ -46,7 +46,7 @@ class UnitGuess
         return $quantity;
     }
 
-    private function getUnitByAbbreviation($quantity, $default) : IUnit
+    private function getUnitByAbbreviation($quantity, $default)
     {
         $units = include(__DIR__.'/config/units.php');
 

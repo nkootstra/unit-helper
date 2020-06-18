@@ -15,12 +15,12 @@ abstract class BaseUnit implements IUnit
         $this->quantity = $quantity;
     }
 
-    public function getQuantity() : float
+    public function getQuantity()
     {
         return $this->quantity;
     }
 
-    public function getName() : string
+    public function getName()
     {
         return (new \ReflectionClass($this))->getShortName();
     }
