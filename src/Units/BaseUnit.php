@@ -8,7 +8,7 @@ use Nkootstra\UnitConversion\Interfaces\IUnit;
 
 abstract class BaseUnit implements IUnit
 {
-    private float $quantity;
+    private $quantity;
 
     public function __construct($quantity = 1)
     {
