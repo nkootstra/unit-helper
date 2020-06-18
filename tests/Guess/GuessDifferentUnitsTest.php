@@ -1,17 +1,17 @@
 <?php
 
 
-namespace Nkootstra\UnitConversion\Tests\Guess;
+namespace Nkootstra\UnitHelper\Tests\Guess;
 
 
-use Nkootstra\UnitConversion\Tests\BaseTestCase;
-use Nkootstra\UnitConversion\UnitGuess;
-use Nkootstra\UnitConversion\Units\Base\Piece;
-use Nkootstra\UnitConversion\Units\Volume\CentiLiter;
-use Nkootstra\UnitConversion\Units\Volume\Liter;
-use Nkootstra\UnitConversion\Units\Volume\MilliLiter;
+use Nkootstra\UnitHelper\UnitGuess;
+use Nkootstra\UnitHelper\Units\Base\Piece;
+use Nkootstra\UnitHelper\Units\Volume\CentiLiter;
+use Nkootstra\UnitHelper\Units\Volume\Liter;
+use Nkootstra\UnitHelper\Units\Volume\MilliLiter;
+use PHPUnit\Framework\TestCase;
 
-class GuessDifferentUnitsTest extends BaseTestCase
+class GuessDifferentUnitsTest extends TestCase
 {
     public function test_if_liter_is_guessed()
     {

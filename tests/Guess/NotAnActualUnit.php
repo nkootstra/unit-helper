@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Nkootstra\UnitConversion\Tests\Guess;
+namespace Nkootstra\UnitHelper\Tests\Guess;
 
 
 class NotAnActualUnit

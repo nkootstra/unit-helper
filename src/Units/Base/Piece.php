@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Nkootstra\UnitConversion\Units\Base;
+namespace Nkootstra\UnitHelper\Units\Base;
 
 
-use Nkootstra\UnitConversion\Units\BaseUnit;
+use Nkootstra\UnitHelper\Units\BaseUnit;
 
 class Piece extends BaseUnit
 {

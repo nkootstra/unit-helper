@@ -1,12 +1,11 @@
 <?php
 
-namespace Nkootstra\UnitConversion;
+namespace Nkootstra\UnitHelper;
 
 use ChrisKonnertz\StringCalc\StringCalc;
-use Illuminate\Support\Str;
-use Nkootstra\UnitConversion\Interfaces\IUnit;
-use Nkootstra\UnitConversion\Units\Base\Piece;
-use Nkootstra\UnitConversion\Units\BaseUnit;
+use Nkootstra\UnitHelper\Interfaces\IUnit;
+use Nkootstra\UnitHelper\Units\Base\Piece;
+use Nkootstra\UnitHelper\Units\BaseUnit;
 
 class UnitGuess
 {
@@ -37,7 +36,6 @@ class UnitGuess
     private function getQuantityString()
     {
         // remove unit
-        //$quantity = preg_filter('/[^\d\s+x*.,]+/','',$this->input);
         preg_match_all('/(?:[0-9]+[.,]?|[x+*])/',$this->input,$matches);
         $quantity = implode('',$matches[0]);
 

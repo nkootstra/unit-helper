@@ -1,16 +1,15 @@
 <?php
 
 
-namespace Nkootstra\UnitConversion\Tests\Guess;
+namespace Nkootstra\UnitHelper\Tests\Guess;
 
-use BaseUnitConversionTest;
-use Nkootstra\UnitConversion\Tests\BaseTestCase;
-use Nkootstra\UnitConversion\UnitGuess;
-use Nkootstra\UnitConversion\Units\Base\Piece;
-use Nkootstra\UnitConversion\Units\Mass\Gram;
-use Nkootstra\UnitConversion\Units\Volume\Liter;
+use Nkootstra\UnitHelper\UnitGuess;
+use Nkootstra\UnitHelper\Units\Base\Piece;
+use Nkootstra\UnitHelper\Units\Mass\Gram;
+use Nkootstra\UnitHelper\Units\Volume\Liter;
+use PHPUnit\Framework\TestCase;
 
-class UnitGuessTest extends BaseTestCase
+class UnitGuessTest extends TestCase
 {
     public function test_if_non_existing_unit_fails()
     {

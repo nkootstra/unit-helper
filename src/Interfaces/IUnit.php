@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Nkootstra\UnitConversion\Interfaces;
+namespace Nkootstra\UnitHelper\Interfaces;
 
 
 interface IUnit

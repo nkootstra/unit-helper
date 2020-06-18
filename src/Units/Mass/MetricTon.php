@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Nkootstra\UnitConversion\Units\Mass;
+namespace Nkootstra\UnitHelper\Units\Mass;
 
 
-use Nkootstra\UnitConversion\Units\BaseUnit;
+use Nkootstra\UnitHelper\Units\BaseUnit;
 
 class MetricTon extends BaseUnit {}

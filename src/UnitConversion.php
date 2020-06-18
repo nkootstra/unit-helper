@@ -1,8 +1,8 @@
 <?php
 
-namespace Nkootstra\UnitConversion;
+namespace Nkootstra\UnitHelper;
 
-class UnitConversion
+class UnitHelper
 {
     public function __construct(string $input)
     {

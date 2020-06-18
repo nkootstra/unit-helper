@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Nkootstra\UnitConversion\Units\Volume;
+namespace Nkootstra\UnitHelper\Units\Volume;
 
 
-use Nkootstra\UnitConversion\Units\BaseUnit;
+use Nkootstra\UnitHelper\Units\BaseUnit;
 
 class Liter extends BaseUnit {}

@@ -1,19 +1,18 @@
 {
-    "name": "nkootstra/unit-conversion2",
+    "name": "nkootstra/unit-helper",
     "description": "",
     "keywords": [
-        "nkootstra",
         "unit helper",
         "unit guesser",
         "unit conversion"
     ],
-    "homepage": "https://github.com/nkootstra/unit-conversion2",
+    "homepage": "https://github.com/nkootstra/unit-helper",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
             "name": "Niels Kootstra",
-            "email": "niels.kootstra@gmail.com",
+            "email": "niels.kootstra@pm.me",
             "role": "Developer"
         }
     ],
@@ -27,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Nkootstra\\UnitConversion\\": "src"
+            "Nkootstra\\UnitHelper\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Nkootstra\\UnitConversion\\Tests\\": "tests"
+            "Nkootstra\\UnitHelper\\Tests\\": "tests"
         }
     },
     "scripts": {

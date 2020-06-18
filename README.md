@@ -19,9 +19,9 @@ composer require nkootstra/unit-helper
 
 ``` php
 $guess = new UnitGuess("2 x 2 l");
-$unit = $guess->guess(\Nkootstra\UnitConversion\Units\Base\Piece::class);
-$unit->getQuantity() // 4
-$unit->getName() // Liter
+$unit = $guess->guess(\Nkootstra\UnitHelper\Units\Base\Piece::class);
+$unit->getQuantity(); // 4
+$unit->getName(); // Liter
 ```
 
 ### Testing

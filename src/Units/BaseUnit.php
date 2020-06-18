@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Nkootstra\UnitConversion\Units;
+namespace Nkootstra\UnitHelper\Units;
 
 
-use Nkootstra\UnitConversion\Interfaces\IUnit;
+use Nkootstra\UnitHelper\Interfaces\IUnit;
 
 abstract class BaseUnit implements IUnit
 {
