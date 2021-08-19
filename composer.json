@@ -12,12 +12,12 @@
     "authors": [
         {
             "name": "Niels Kootstra",
-            "email": "niels.kootstra@pm.me",
+            "email": "niels.kootstra@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^8.0",
         "chriskonnertz/string-calc": "^1.0"
     },
     "require-dev": {
